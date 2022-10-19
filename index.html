@@ -5,12 +5,26 @@
   <meta charset="utf-8">
   <link rel="stylesheet" href="css/font-awesome.min.css">
   <style>
-    button {border-style: none; cursor: pointer; background-color: transparent}
+    button {
+      border-style: none;
+      cursor: pointer;
+      background-color: transparent
+    }
     i {color: white}
+    .player{
+      width: 800px;
+      height: 600px;
+      box-shadow: 0 0 10px rgba(0,0,0,1);
+      display: flex;
+      flex-direction: column;
+    }
+    .js-video-container{
+      flex-grow: 2;
+    }
   </style>
 </head>
 <body>
-  <div id="player" style="width: 800px; height: 600px; box-shadow: 0 0 10px rgba(0,0,0,1)">
+  <div id="player" class="player">
     <div class="js-video-container" style="width: 100%; height: 100%"></div>
     <div style="background: black">
       <button class="js-play-button">

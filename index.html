@@ -45,6 +45,33 @@
       font-family: 'Roboto';
       sans-serif;
     }
+    .empty{
+      flex-grow: 1;
+    }
+    .progress-bar{
+      padding: 7px 10px;
+      box-sizing: border-box;
+    }
+    .js-progress{
+      display: flex;
+      width: 133px;
+      border-radius: 10px;
+    }
+    .js-progress-slider{
+      height: 5px;
+      border-radius: 10px;
+    }
+    .slider{
+      height: 8px;
+      width: 8px;
+      background-color: red;
+      border-style: solid;
+      border-width: 3px;
+      border-color: white;
+      border-radius: 50%;
+      display: inline-block;
+      margin: -10px;
+    }
   </style>
 </head>
 <body>
@@ -67,8 +94,15 @@
       </div>
       <div class="center-buttons">
         <div class="js-current-time"></div>
-        <div class="js-volume" style="flex-grow: 1;"></div>
-        <div class="js-duration"></div>
+        <div class="progress-bar">
+          <div class="js-progress" style="background-color: grey;">
+            <div class="js-progress-slider" style="background-color: red;">-</div>
+            <span class="slider"></span>
+          </div>
+        </div>
+        <div class="empty">
+        </div>
+        <div class="js-duration" style=></div>
       </div>
       <div>
         <button class="buttons-tab-button js-fullscreen-button">
@@ -76,7 +110,6 @@
         </button>
       </div>
     </div>
-
   </div>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
   <script src="https://unpkg.com/playable@2.10.3/dist/statics/playable.bundle.min.js"></script>

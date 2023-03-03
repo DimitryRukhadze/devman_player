@@ -25,7 +25,7 @@
       padding-top: 5px;
       padding-bottom: 5px;
 }
-.center-buttons{
+.progress-bar-wrapper{
       display: flex;
       flex-grow: 1;
       flex-direction: row;
@@ -33,21 +33,18 @@
       color: white;
       font-family: 'Roboto';
       font-size: 18.4px;
-}
-.empty{
-      flex-grow: 1;
+      cursor: pointer;
 }
 .progress-bar{
       padding: 7px 10px;
       box-sizing: border-box;
+      flex-grow: 1;
 }
 .js-progress{
       display: flex;
-      width: 133px;
       border-radius: 10px;
 }
 .js-progress-slider{
-      height: 5px;
       border-radius: 10px;
 }
 .slider{
